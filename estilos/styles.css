@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonte:'Outfit', sans-serif;
+    --main-color: hsl(217, 54%, 11%);
+    --card-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --whit-color: hsl(0, 0%, 100%)
+}
+
+body{
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: var(--fonte);
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+.imagens{
+    position: relative;
+}
+
+.imagens div{
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.304);
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.imagens div:hover{
+   opacity: 1;
+   cursor: pointer;
+}
+
+.imagens div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-equilibrium{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+a{
+    color: var(--whit-color);
+    text-decoration: none;
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+h2{
+    padding-top: 10px;
+}
+.conteudo > p{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5em;
+    padding: 20px 0px;
+}
+
+.eth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eth > h3 > .icon-eth{
+    margin-right: 10px;
+}
+.eth > h3{
+    color: hsl(178, 100%, 50%);
+    
+}
+.eth > p{
+    color:hsl(215, 51%, 70%);
+    
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.hr1{
+    border: 0;
+    border-top: 1px solid var(--line-color);
+}
+
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: hsl(215, 51%, 70%);
+}
+.icon{
+    width: 10%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-right: 15px;
+}
